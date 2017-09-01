@@ -1,0 +1,42 @@
+****************************************
+INFO - MIST VS WALLET
+****************************************
+
+    Source: https://github.com/ethereum/mist
+
+    MIST is a Browser
+    It runs on a geth Ethereum node in the Background (you must start it forst)
+
+    It's an electron (html/js) app
+    Ethereum Wallet is just a DAPP
+
+    Data Folder macOS    ~/Library/Application\ Support/Mist
+
+
+
+****************************************
+HOW TO - LAUNHING MIST ON MAC OS WITH PRIVATE NETWROK
+****************************************
+
+
+    /Applications/Mist.app/Contents/MacOS/Mist --rpc /Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata/geth.ipc
+
+
+
+
+
+****************************************
+TROUBLE SHOOTING
+****************************************
+----------------------------------------
+"""""
+Starting P2P networking Fatal: Error starting protocol stack: 
+listen udp :30303: bind: address already in use
+"""""
+
+Solution: https://github.com/tomw1808/truffle_eth_class2/blob/master/README.md
+
+Explanatiom: 
+    https://ethereum.stackexchange.com/questions/4472/port-30303-error-in-mist-when-i-run-geth-with-a-different-datadir
+    https://ethereum.stackexchange.com/questions/4418/how-to-change-to-private-network-in-etherum-wallet/4429#4429
+----------------------------------------

@@ -1,0 +1,52 @@
+Source: https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
+
+****************************************
+INSTALLING GETH
+****************************************
+    brew tap ethereum/ethereum
+    brew install ethereum
+
+
+****************************************
+HOW TO - TO CREATE A PRIVATE BLOCKCHAIN
+****************************************
+
+    1 - Download a Starting geneis block
+        Source: https://github.com/tomw1808/truffle_eth_class2/tree/master/s01
+
+    2 - Create a repository such as:
+
+        localBlockchain
+            |
+            -- chaindata [FOLDER - This is where you will store the Blockchain]
+            -- genesis.json [FILE - This is where you will store the genesis blockchain]
+
+    3 - Create the localBlockchain. 
+        geth --datadir=/path/to/an/empty/localBlockchain/chaindata init /path/to/localBlockchain/genesis.json 
+    
+            --datadir >> Directory to the folder that will contain the chaindata
+            init is the command to initialize the blockchain based on the genesis.json file
+
+****************************************
+HOW TO - START A PRIVATE BLOCKCHAIN
+****************************************
+
+    1 - From the previous steps, you now have:
+
+        localBlockchain
+            |
+            -- chaindata
+                |
+                -- geth
+                -- keystone
+            -- genesis.json 
+
+    2 - To start the private blockchain
+
+        geth --datadir=/path/to/an/empty/localBlockchain/chaindata
+
+        geth --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
+
+    TO KNOW
+        - Will be running on port 30303
+

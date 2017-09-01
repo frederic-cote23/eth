@@ -1,0 +1,22 @@
+******************************************************
+HOW TO START MIST ON A PRIVATE BLOCHCHAIN
+******************************************************
+/Applications/Mist.app/Contents/MacOS/Mist --rpc /Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata/geth.ipc
+
+
+******************************************************
+HOW TO START A PRIVATE BLCKCHAIN
+******************************************************
+
+geth --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
+
+>>This starts the Geth Console 
+geth conole --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
+
+
+******************************************************
+HOW TO START A MINER
+******************************************************
+
+1 - geth conole --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
+2 - miner.start(1)
