@@ -11,7 +11,7 @@ HOW TO START A PRIVATE BLCKCHAIN
 geth --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
 
 >>This starts the Geth Console 
-geth conole --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
+geth console --datadir=/Users/FredericCote/Documents/Github/eth/localBlockchain/chaindata
 
 
 ******************************************************
